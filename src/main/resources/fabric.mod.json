@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "creakingalert",
+  "version": "${version}",
+  "name": "CreakingAlert",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/creakingalert/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.bre.creakingalert.client.CreakingalertClient"
+    ],
+    "main": [
+      "com.bre.creakingalert.Creakingalert"
+    ]
+  },
+  "mixins": [
+    "creakingalert.mixins.json",
+    {
+      "config": "creakingalert.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

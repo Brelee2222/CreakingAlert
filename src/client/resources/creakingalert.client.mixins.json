@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.bre.creakingalert.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CreakingSpawn"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
